@@ -6,9 +6,9 @@ class StaffScreen extends StatelessWidget {
 
   final _abogados = const [
     {'nombre': 'Zulma Santos Ventura', 'rol': 'Scrum Master', 'iniciales': 'ZS', 'color': Color(0xFF5700C9), 'email': 'zusantosve@ucvvirtual.edu.pe', 'desc': 'Especialista en derecho digital y gestión de proyectos legales tecnológicos.'},
-    {'nombre': 'Sixto Irrbarren Cruz', 'rol': 'Abogado Litigante', 'iniciales': 'SI', 'color': Color(0xFF006A62), 'email': null, 'desc': 'Especialista en defensa legal contra el ciberacoso y delitos informáticos.'},
-    {'nombre': 'Emilio Robles Soldevilla', 'rol': 'Abogado Corporativo', 'iniciales': 'ER', 'color': Color(0xFF5700C9), 'email': null, 'desc': 'Especialista en derecho corporativo y protección de datos personales.'},
-    {'nombre': 'Carlos Jefferson Bardales Torres', 'rol': 'Abogado Penalista', 'iniciales': 'CB', 'color': Color(0xFF006A62), 'email': null, 'desc': 'Especialista en derecho penal y delitos informáticos.'},
+    {'nombre': 'Sixto Irribarren Cruz', 'rol': 'Abogado Litigante', 'iniciales': 'SI', 'color': Color(0xFF006A62), 'email': 'siirribarrencr@ucvvirtual.edu.pe', 'desc': 'Especialista en defensa legal contra el ciberacoso y delitos informáticos.'},
+    {'nombre': 'Emilio Robles Soldevilla', 'rol': 'Abogado Corporativo', 'iniciales': 'ER', 'color': Color(0xFF5700C9), 'email': 'emroblesso@ucvvirtual.edu.pe', 'desc': 'Especialista en derecho corporativo y protección de datos personales.'},
+    {'nombre': 'Carlos Jefferson Bardales Torres', 'rol': 'Abogado Penalista', 'iniciales': 'CB', 'color': Color(0xFF006A62), 'email': 'cabardalesto@ucvvirtual.edu.pe', 'desc': 'Especialista en derecho penal y delitos informáticos.'},
   ];
 
   @override
