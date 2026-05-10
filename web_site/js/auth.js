@@ -3,6 +3,17 @@ const Auth = {
   currentUser: JSON.parse(localStorage.getItem('jd_current_user') || 'null'),
 
   init() {
+    if (this.users.length === 0) {
+      this.users.push({
+        id: 'test-001',
+        name: 'Usuario Prueba',
+        email: 'prueba@test.com',
+        password: '123456',
+        avatar: 'U',
+        createdAt: new Date().toISOString()
+      });
+      localStorage.setItem('jd_users', JSON.stringify(this.users));
+    }
     this.updateUI();
   },
 
