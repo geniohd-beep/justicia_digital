@@ -70,6 +70,8 @@
 }
 .page { display: none; }
 .page.active { display: block; }
+#user-info { display: none; }
+#user-info.show { display: flex; }
 </style>
 </head>
 <body class="bg-background text-on-background font-body-md">
@@ -91,6 +93,17 @@
 </div>
 <div class="flex items-center gap-4">
 <button class="px-5 py-2 vibrant-gradient text-white rounded-lg font-bold hover:opacity-90 transition-all shadow-lg shadow-tertiary/20" onclick="App.navigate('denuncias')">Reportar Caso</button>
+<div id="auth-buttons" class="flex items-center gap-2">
+<button class="px-4 py-2 border-2 border-primary text-primary rounded-lg font-bold hover:bg-primary/5 transition-all" onclick="App.navigate('login')">Iniciar Sesión</button>
+<button class="px-4 py-2 vibrant-gradient text-white rounded-lg font-bold hover:opacity-90 transition-all" onclick="App.navigate('register')">Registrarse</button>
+</div>
+<div id="user-info" class="hidden items-center gap-3">
+<button class="px-4 py-2 border border-slate-200 text-on-surface-variant rounded-lg text-sm font-medium hover:bg-slate-50 transition-all" onclick="Auth.logout()">Cerrar Sesión</button>
+<div class="flex items-center gap-2 cursor-pointer" onclick="App.navigate('profile')">
+<div id="user-avatar" class="w-9 h-9 rounded-full vibrant-gradient flex items-center justify-center text-white text-sm font-bold"></div>
+<span id="user-name" class="text-sm font-bold text-primary hidden md:inline"></span>
+</div>
+</div>
 </div>
 </div>
 </nav>
@@ -346,6 +359,32 @@
 <a href="mailto:cabardalesto@ucvvirtual.edu.pe" class="text-xs text-on-surface-variant font-bold hover:text-tertiary transition-colors">cabardalesto@ucvvirtual.edu.pe</a>
 </div>
 </div>
+</div>
+</section>
+
+<!-- LOGIN PAGE -->
+<section class="page" id="page-login">
+<div class="relative overflow-hidden py-16" style="background:#00113a">
+<div class="max-w-container-max mx-auto px-margin text-center">
+<h1 class="font-headline-xl text-headline-xl text-white mb-4">Iniciar Sesión</h1>
+<p class="text-slate-300 text-lg max-w-2xl mx-auto">Acceda a su cuenta para gestionar sus denuncias y casos.</p>
+</div>
+</div>
+<div class="max-w-md mx-auto px-margin py-16">
+<div id="login-container"></div>
+</div>
+</section>
+
+<!-- REGISTER PAGE -->
+<section class="page" id="page-register">
+<div class="relative overflow-hidden py-16" style="background:#00113a">
+<div class="max-w-container-max mx-auto px-margin text-center">
+<h1 class="font-headline-xl text-headline-xl text-white mb-4">Crear Cuenta</h1>
+<p class="text-slate-300 text-lg max-w-2xl mx-auto">Regístrese para acceder a todos nuestros servicios legales.</p>
+</div>
+</div>
+<div class="max-w-md mx-auto px-margin py-16">
+<div id="register-container"></div>
 </div>
 </section>
 
